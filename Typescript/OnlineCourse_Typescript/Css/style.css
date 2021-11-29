@@ -1,0 +1,16 @@
+#Registerdiv
+{
+    display: block;
+}
+#maindiv
+{
+    display:none;
+}
+#availablediv
+{
+    display:none;
+}
+#coursediv
+{
+    display:none;
+}

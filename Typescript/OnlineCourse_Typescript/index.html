@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Online Course Enrollment </title>
+        <link rel="stylesheet" href="Css/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+<!-- Registration Div  -->
+        <div id="Registerdiv">
+            <label for="name">User Name</label><br>
+            <input type="text" name="name" id="Uname">
+            <br>
+            <label for="age">Age</label><br>
+            <input type="text" name="age" id="Uage">
+            <br>
+            <label for="num">Mobile Number</label><br>
+            <input type="text" name="num" id="Unum"><br>
+            <br>
+            <button type="submit" id="add" onclick="register()">Add User</button>
+        </div><br>
+<!-- Main Div -->
+        <div id="maindiv">
+            <label for="Uid">User ID</label><br>
+            <input type="text" name="id" id="Unique"><br>
+            <br>
+            <button type="submit" id="validate" onclick="validate()">Confirm</button>
+        </div><br>
+<!-- Available options for user Div -->
+        <div id="availablediv">
+            <input type="number" id="userid">
+            <button type="submit" id="avail" onclick="available()">Available Courses</button> <br> 
+            <br>      
+            <button type="submit" id="enroll" onclick="enrollcourses()">Enrolled Courses</button><br>
+            <br>
+        </div>
+<!-- Courses div -->
+        <div id="coursediv">
+
+            <label for="language">Available Courses</label><br>
+            <select name="learn" id="language1">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JAVASCRIPT">JAVASCRIPT</option>
+                <option value="TYPESCRIPT">TYPESCRIPT</option>
+                <option value="C#">C#</option>
+            </select><br>
+            <label for="Cid">Required days to complete</label><br>
+            <input type="text" name="day" id="days"><br>
+            <br>
+            <button type="submit" id="days" onclick="requireddays()">OK </button>
+            <button type="submit" id="days1" onclick="enrolled()">Go Back </button>
+        </div>
+        <!--To show Enrolled courses -->
+        <div id="history">
+            <label for="name" id="showname">User Name</label><br>
+                       <br>
+            <label for="age" id="showage">Age</label><br>
+                     <br>
+            <label for="num" id="shownum">Mobile Number</label><br>
+            
+            <br>
+        </div>
+    </body>
+</html>
